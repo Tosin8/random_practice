@@ -12,25 +12,35 @@ class _Linear_GradientState extends State<Linear_Gradient> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Linear Gradient'),
+          title: const Text(
+            'Linear Gradient',
+          ),
+          centerTitle: true,
         ),
-        body: Center(
-            child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: Colors.yellowAccent,
-                ),
-                child: const Center(
-                  child: Text(
-                    'My Text',
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.center,
+        body: Column(children: [
+          Center(
+              child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.yellowAccent,
                   ),
-                ))));
+                  child: const Center(
+                    child: Text(
+                      'My Text',
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ))),
+          Row(
+            children: const [
+              Icon(Icons.star, size: 20),
+            ],
+          )
+        ]));
   }
 }
