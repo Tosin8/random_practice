@@ -67,10 +67,17 @@ class _Linear_GradientState extends State<Linear_Gradient> {
           ),
 
           // Using a unique themedata - creating a ThemeData() instance and passing that to the Theme Widget.
-          Theme(
-              data: ThemeData(splashColor: Colors.yellow),
-              child: FloatingActionButton(
-                  onPressed: () {}, child: const Icon(Icons.add)))
+          // Theme(
+          //     data: ThemeData(splashColor: Colors.yellow),
+          //     child: FloatingActionButton(
+          //         onPressed: () {}, child: const Icon(Icons.add)))
+
+          Column(mainAxisAlignment: MainAxisAlignment.center, children: const [
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Short'),
+            )
+          ])
         ]));
   }
 }
