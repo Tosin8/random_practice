@@ -13,24 +13,24 @@ class _Linear_GradientState extends State<Linear_Gradient> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Linear Gradient'),
-          centerTile: 
         ),
         body: Center(
             child: Container(
                 height: 150,
                 width: 150,
-               
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                   color: Colors.yellowAccent,
+                  color: Colors.yellowAccent,
                 ),
-                child: const Text(
-                  'My Text',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w500,
+                child: const Center(
+                  child: Text(
+                    'My Text',
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ))));
   }
 }

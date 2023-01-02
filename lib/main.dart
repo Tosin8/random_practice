@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Linear_Gradient(),
+      home: const Linear_Gradient(),
     );
   }
 }
-
