@@ -14,12 +14,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Daily Practice',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.green,
 
-        // defining teh default brightness
-        brightness: Brightness.dark,
-      ),
+      // creating app theme, and if no theme is created, flutter get it created by default.
+
+      theme: ThemeData(
+          primarySwatch: Colors.green,
+
+          // defining teh default brightness
+          brightness: Brightness.dark,
+
+          // defining the default font family.
+          fontFamily: 'Georgia',
+
+          // defining teh defautlt TextTheme , using this to specify the default text styling for headlines, titles and bodies of text.
+          textTheme: const TextTheme(
+            headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
+            headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
+            bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
+          )),
       home: const Linear_Gradient(),
     );
   }

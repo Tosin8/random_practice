@@ -49,11 +49,13 @@ class _Linear_GradientState extends State<Linear_Gradient> {
             ],
           ),
           Row(
-            crossAxisAlignment: CrossAxisAlignment.baseline, 
+            crossAxisAlignment: CrossAxisAlignment.baseline,
             textBaseline: TextBaseline.alphabetic,
             children: [
               Text(
                 'Baseline',
+
+                // using a theme.
                 style: Theme.of(context).textTheme.headline2,
               ),
               Text(
@@ -62,6 +64,12 @@ class _Linear_GradientState extends State<Linear_Gradient> {
               )
             ],
           ),
+
+          // Using a unique themedata - creating a ThemeData() instance and passing that to the Theme Widget.
+          Theme(
+              data: ThemeData(splashColor: Colors.yellow),
+              child: FloatingActionButton(
+                  onPressed: () {}, child: const Icon(Icons.add)))
         ]));
   }
 }
