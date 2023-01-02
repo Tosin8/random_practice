@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'Daily Practice',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
+
+        // defining teh default brightness
+        brightness: Brightness.dark,
       ),
       home: const Linear_Gradient(),
     );
