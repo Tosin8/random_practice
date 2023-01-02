@@ -17,7 +17,8 @@ class _Linear_GradientState extends State<Linear_Gradient> {
           ),
           centerTitle: true,
         ),
-        body: Column(children: [
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          const SizedBox(height: 10),
           Center(
               child: Container(
                   height: 150,
@@ -46,7 +47,18 @@ class _Linear_GradientState extends State<Linear_Gradient> {
               Icon(Icons.star, size: 20),
               Icon(Icons.star, size: 20),
             ],
-          )
+          ),
+          Row(
+            children: [
+              Text(
+                'Baseline',
+                style: Theme.of(context).textTheme.headline2,
+              ),
+              Text('Baseline', 
+              style: Theme.of(context).textTheme.body1, 
+              )
+            ],
+          ),
         ]));
   }
 }
