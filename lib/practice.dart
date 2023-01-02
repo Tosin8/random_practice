@@ -25,6 +25,7 @@ class _Linear_GradientState extends State<Linear_Gradient> {
                   width: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
+                    border: Border.all(color: Colors.blue, width: 2),
                     color: Colors.yellowAccent,
                   ),
                   child: const Center(
