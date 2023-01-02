@@ -36,8 +36,14 @@ class _Linear_GradientState extends State<Linear_Gradient> {
                       textAlign: TextAlign.center,
                     ),
                   ))),
+          const SizedBox(height: 10),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: const [
+              Icon(Icons.star, size: 20),
+              Icon(Icons.star, size: 20),
+              Icon(Icons.star, size: 20),
+              Icon(Icons.star, size: 20),
               Icon(Icons.star, size: 20),
             ],
           )
