@@ -49,13 +49,16 @@ class _Linear_GradientState extends State<Linear_Gradient> {
             ],
           ),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.baseline, 
+            textBaseline: TextBaseline.alphabetic,
             children: [
               Text(
                 'Baseline',
                 style: Theme.of(context).textTheme.headline2,
               ),
-              Text('Baseline', 
-              style: Theme.of(context).textTheme.body1, 
+              Text(
+                'Baseline',
+                style: Theme.of(context).textTheme.bodyText2,
               )
             ],
           ),
