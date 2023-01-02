@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.green,
 
-          // defining teh default brightness
+          // defining the default brightness
           brightness: Brightness.dark,
 
           // defining the default font family.

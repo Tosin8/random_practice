@@ -72,12 +72,23 @@ class _Linear_GradientState extends State<Linear_Gradient> {
           //     child: FloatingActionButton(
           //         onPressed: () {}, child: const Icon(Icons.add)))
 
-          Column(mainAxisAlignment: MainAxisAlignment.center, children: const [
-            ElevatedButton(
-              onPressed: () {},
-              child: Text('Short'),
-            )
-          ])
+          IntrinsicWidth(
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('Short'),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('A Bit longer'),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('The longest text button'),
+              ),
+            ]),
+          )
         ]));
   }
 }
