@@ -25,11 +25,9 @@ class Practice_One extends StatelessWidget {
           fit: StackFit.expand,
           children: const [
             Material(color: Colors.yellowAccent),
-            Positioned(
-              top: 0,
-              left: 0,
-              child: Icon(Icons.star, size: 50),
-            )
+            Positioned(top: 0, left: 0, child: Icon(Icons.star, size: 50)),
+            Positioned(top: 450, left: 400, child: Icon(Icons.call, size: 50, color: Colors.white, 
+            )),
           ],
         ));
   }
