@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.green,
 
           // defining the default brightness
-          brightness: Brightness.dark,
+         // brightness: Brightness.dark,
 
           // defining the default font family.
           fontFamily: 'Georgia',
