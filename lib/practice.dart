@@ -73,22 +73,23 @@ class _Linear_GradientState extends State<Linear_Gradient> {
           //         onPressed: () {}, child: const Icon(Icons.add)))
 
           IntrinsicWidth(
-            child: Column(mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Short'),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('A Bit longer'),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('The longest text button'),
-              ),
-            ]),
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Short'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('A Bit longer'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('The longest text button'),
+                  ),
+                ]),
           )
         ]));
   }
