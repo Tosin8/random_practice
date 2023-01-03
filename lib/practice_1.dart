@@ -5,6 +5,7 @@ class Practice_One extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 1. USING STACK BANNER.
     // Widget main = Scaffold(
     //   appBar: AppBar(title: const Text('Stack')),
     // );
@@ -28,15 +29,36 @@ class Practice_One extends StatelessWidget {
               const Material(color: Colors.yellowAccent),
               Positioned(
                   top: 0, left: 0, child: Icon(Icons.star, size: iconSize)),
-              const Positioned(
-                  top: 450,
-                  left: 400,
+              Positioned(
+                  top: constraints.maxHeight - iconSize,
+                  left: constraints.maxWidth - iconSize,
                   child: Icon(
                     Icons.call,
+                    size: iconSize,
                     color: Colors.white,
                   )),
             ],
           ),
         ));
+  }
+}
+
+class Fore_Container extends StatelessWidget {
+  const Fore_Container({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Container'),
+      ),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: const BoxDecoration(color: Colors.yellowAccent),
+        foregroundDecoration: const BoxDecoration(color: Colors.green),
+        child: const Text('Hi', textAlign: TextAlign.center),
+      ),
+    );
   }
 }
