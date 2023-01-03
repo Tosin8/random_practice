@@ -8,6 +8,14 @@ class Practice_One extends StatelessWidget {
     Widget main = Scaffold(
       appBar: AppBar(title: const Text('Stack')),
     );
-    return Container();
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        main,
+        const Banner(message: 'Top Start', location: BannerLocation.topStart),
+        const Banner(message: 'Top End', location: BannerLocation.topEnd),
+        const Banner(message: 'Top Start', location: BannerLocation.topStart),
+      ],
+    );
   }
 }
