@@ -14,7 +14,9 @@ class Practice_One extends StatelessWidget {
         main,
         const Banner(message: 'Top Start', location: BannerLocation.topStart),
         const Banner(message: 'Top End', location: BannerLocation.topEnd),
-        const Banner(message: 'Top Start', location: BannerLocation.topStart),
+        const Banner(
+            message: 'Bottom Start', location: BannerLocation.bottomStart),
+        const Banner(message: 'Bottom End', location: BannerLocation.bottomEnd),
       ],
     );
   }
