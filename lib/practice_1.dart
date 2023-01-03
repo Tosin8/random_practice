@@ -18,17 +18,25 @@ class Practice_One extends StatelessWidget {
     //     Banner(message: 'Bottom End', location: BannerLocation.bottomEnd),
     //   ],
     // );
-
+    double iconSize = 50.0;
     return Scaffold(
-        appBar: AppBar(title: const Text('Stack')),
-        body: Stack(
-          fit: StackFit.expand,
-          children: const [
-            Material(color: Colors.yellowAccent),
-            Positioned(top: 0, left: 0, child: Icon(Icons.star, size: 50)),
-            Positioned(top: 450, left: 400, child: Icon(Icons.call, size: 50, color: Colors.white, 
-            )),
-          ],
+        appBar: AppBar(title: const Text('Stack with Layout Builder')),
+        body: LayoutBuilder(
+          builder: (context, constraints) => Stack(
+            fit: StackFit.expand,
+            children: [
+              const Material(color: Colors.yellowAccent),
+              Positioned(
+                  top: 0, left: 0, child: Icon(Icons.star, size: iconSize)),
+              const Positioned(
+                  top: 450,
+                  left: 400,
+                  child: Icon(
+                    Icons.call,
+                    color: Colors.white,
+                  )),
+            ],
+          ),
         ));
   }
 }
