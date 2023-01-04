@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             // headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
             bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
           )),
-      home: const Practice_One(),
+      home: const Fore_Container(),
     );
   }
 }
