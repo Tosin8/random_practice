@@ -10,13 +10,15 @@ class implicit_animation extends StatefulWidget {
 class _implicit_animationState extends State<implicit_animation> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 30,
-      height: 30,
-      decoration: BoxDecoration(
-        color: Colors.green,
-        borderRadius: BorderRadius.circular(10),
+    return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Container(
+        width: 30,
+        height: 30,
+        decoration: BoxDecoration(
+          color: Colors.green,
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
-    );
+    ]);
   }
 }
