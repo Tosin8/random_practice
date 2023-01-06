@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_practice/animation/implicit.dart';
 import 'package:random_practice/practice_1.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             // headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
             bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
           )),
-      home: const Fore_Container(),
+      home: const implicit_animation(),
     );
   }
 }
