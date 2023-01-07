@@ -13,13 +13,20 @@ class _implicit_animationState extends State<implicit_animation> {
     return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       AnimatedContainer(
         width: 100,
-        height: 100,
+        height: 200,
         duration: const Duration(seconds: 120),
         decoration: BoxDecoration(
           color: Colors.green,
           borderRadius: BorderRadius.circular(10),
         ),
       ),
+      GestureDetector(
+          onTap: () => setState(() {
+                width:
+                300;
+                height:
+                400;
+              }))
     ]);
   }
 }
