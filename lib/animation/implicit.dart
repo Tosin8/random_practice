@@ -12,8 +12,8 @@ class _implicit_animationState extends State<implicit_animation> {
   Widget build(BuildContext context) {
     return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       AnimatedContainer(
-        width: 100,
-        height: 200,
+        width: _width ? 300 : 200,
+        height: _height ? 400 : 300,
         duration: const Duration(seconds: 120),
         decoration: BoxDecoration(
           color: Colors.green,
@@ -22,10 +22,7 @@ class _implicit_animationState extends State<implicit_animation> {
       ),
       GestureDetector(
           onTap: () => setState(() {
-                width:
-                300;
-                height:
-                400;
+                _width
               }))
     ]);
   }
