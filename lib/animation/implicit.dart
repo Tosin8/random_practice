@@ -22,7 +22,7 @@ class _implicit_animationState extends State<implicit_animation> {
       ),
       GestureDetector(
           onTap: () => setState(() {
-                _width
+                _width = !_width;
               }))
     ]);
   }
